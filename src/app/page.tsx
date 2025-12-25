@@ -122,7 +122,7 @@ function RegionSection({
   shows: regionShows 
 }: { 
   region: keyof typeof regionLabels; 
-  shows: (typeof shows)[];
+  shows: typeof shows;
 }) {
   if (regionShows.length === 0) return null;
 
